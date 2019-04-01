@@ -1,0 +1,46 @@
+header
+    +clearfix
+    min-height: 253px
+    position: relative
+    background:
+        image: url('../../img/background-top.jpg')
+        position: top center
+        repeat: no-repeat
+        color: $blue
+        attachment: fixed
+        size: cover
+
+    .img-perfil
+        img
+            border: 1px solid $white
+            +img-responsive
+            width: 25%
+            height: 200px;
+            width: 200px;
+            bottom: -100px;
+            position: relative;
+            margin: -70px auto 0 auto;
+            +transition(.4s)
+            +border-radius(100%)
+            box-shadow: 0 4px 20px 0 rgba($black, 0.19)
+            &:hover
+                +scale(1.1)
+    
+    h1
+        clear: both
+        margin: 40px auto 30px auto  !important
+        font-weight: $light
+        border: 3px solid $white
+        +font-size(40px)
+        padding: 20px
+        display: table
+        +breakpoint($phone)
+            +font-size(20px)  
+
+
+    h1,
+    p
+        color: $white
+        text-align: center
+        text-transform: uppercase
+
