@@ -12,7 +12,7 @@ header
 
     .img-perfil
         img
-            border: 1px solid $white
+            border: 5px solid $white
             +img-responsive
             width: 25%
             height: 200px;
@@ -30,17 +30,24 @@ header
         clear: both
         margin: 40px auto 30px auto  !important
         font-weight: $light
-        border: 3px solid $white
-        +font-size(40px)
         padding: 20px
-        display: table
+        border: 3px solid $white
+        text-transform: uppercase
+        +font-size(40px)
         +breakpoint($phone)
-            +font-size(20px)  
+            +font-size(20px) 
 
 
     h1,
     p
         color: $white
         text-align: center
-        text-transform: uppercase
+        display: table
+
+    p
+        margin: 0 auto 0 auto
+        padding: 10px
+        background: $green-light
+        +breakpoint($phone)
+            +font-size(10px)
 
