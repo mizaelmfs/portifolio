@@ -3,7 +3,6 @@ main
     .body-section
         display: flex
         flex-direction: column
-        height: 1400px
         background: $black
         .about
             +make-sm-column-offset(2)
@@ -39,12 +38,13 @@ main
             display: flex
             flex-direction: column
             .card-about
-                padding: 30px
+                padding: 10px
                 background-color: $black-grey
-            .card-ability
-                width: 100px
-                height: 100px
-                background: #342434
+            .card-skills
+                margin-top: 20px
+                padding: 10px
+                background-color: $black-grey
+
         .card-right
             display: flex
             flex-direction: column
