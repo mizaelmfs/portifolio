@@ -1,3 +1,31 @@
 footer
+    clear: both
     background: $black-grey
     height: 100px
+    text-align: center
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    p,
+        text-transform: uppercase
+        +breakpoint($phone)
+            +font-size(14px)
+    a
+        text-decoration: none
+        &:hover
+            color: $green-strong
+            +transition(.4s)
+        &:active
+            text-decoration: none
+        i
+            padding-left: 10px
+            +font-size(18px)
+            &:hover
+                color: $green-strong
+                +transition(.4s)
+    
+    a,
+    p,
+    i
+        color: $white  

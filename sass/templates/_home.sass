@@ -37,10 +37,11 @@ main
         .card-left
             display: flex
             flex-direction: column
+            min-width: 300px
             +breakpoint($phone)
                 margin-bottom: 20px
             .card-about
-                padding: 10px
+                padding: 20px
                 background-color: $black-grey
             .card-skills
                 margin-top: 20px
@@ -74,7 +75,7 @@ main
                         height: 100%
                         background-color: $green-strong
                         position: absolute
-                        left: 60px
+                        left: 15px
                         top: 0
                     .timeline-item
                         position: relative
@@ -86,20 +87,22 @@ main
                             border: 4px solid $green-strong
                             background-color: $black-grey
                             position: absolute
-                            left: 52px
-                            top: 0px
+                            left: 7px
+                            top: -3px
                             z-index: 9;
                         .time
                             position: absolute
                             left: -85px
+                            top: -3px
                             +opacity(.4)
                             +font-size(14px)
                         .content
-                            margin: 40px 40px 0px 80px;
-                            padding-bottom: 40px
+                            margin: 20px 40px 0px 40px;
+                            padding-bottom: 20px
                             .title
                                 font-weight: $regular
                                 margin-bottom: 15px
+                                +font-size(14px)
 
 
                     
